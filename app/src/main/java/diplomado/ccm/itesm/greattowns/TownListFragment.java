@@ -29,7 +29,7 @@ public class TownListFragment extends ListFragment {
 
         ArrayList<Town> p =new ArrayList<Town>();
 
-        p.add(new Town("Pueblo 1", "descripcion de pueblo 1", "Veracruz", "Rica Comida", "http://www.mascotarios.org/wp-content/gallery/australian-silky-terrier/australian-silky-terrier3.jpg"));
+        p.add(new Town("Tlacotalpan", "Tlacotalpan es una localidad y municipio del sureste del estado de Veracruz dentro de los límites de la Cuenca del Papaloapan, en México, su nombre significa “tierra partida”. Ubicado en la costa del Golfo de México, es conocido por su tradición pesquera y por los dos festivales anuales de música jarocha y décima que patrocina, especialmente interesante por formar un vínculo cultural e histórico entre la música Andalucía, del centro-occidente de África y de las culturas nativas de Mesoamérica", "Veracruz", "Rica Comida", "tlalcotalpan.jpg"));
         p.add(new Town("Pueblo 1", "descripcion de pueblo 1", "Veracruz", "Rica Comida", "http://www.mascotarios.org/wp-content/gallery/australian-silky-terrier/australian-silky-terrier3.jpg"));
         p.add(new Town("Pueblo 1", "descripcion de pueblo 1", "Veracruz", "Rica Comida", "http://www.mascotarios.org/wp-content/gallery/australian-silky-terrier/australian-silky-terrier3.jpg"));
         p.add(new Town("Pueblo 1", "descripcion de pueblo 1", "Veracruz", "Rica Comida", "http://www.mascotarios.org/wp-content/gallery/australian-silky-terrier/australian-silky-terrier3.jpg"));
