@@ -1,12 +1,14 @@
 package diplomado.ccm.itesm.greattowns;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -54,13 +56,15 @@ public class TownAdapter extends BaseAdapter{
             convertView     = lay.inflate(R.layout.tonw_list, parent, false);
         }
 
-        TextView townName   = (TextView)convertView.findViewById(R.id.title);
-        TextView stateName  = (TextView)convertView.findViewById(R.id.textViewState);
-
+        TextView    townName   = (TextView)convertView.findViewById(R.id.title);
+        TextView    stateName  = (TextView)convertView.findViewById(R.id.textViewState);
+        ImageView   imgTown    = (ImageView)convertView.findViewById(R.id.imageView);
 
         Town  r = rowItems.get(position);
         townName.setText(r.getName());
         stateName.setText(r.getState());
+        int id = this.context.getResources().getIdentifier("diplomado.ccm.itesm.greattowns:drawable/" + r.getUrlImage(), null, null);
+        imgTown.setImageResource(id);
         return convertView;
     }
 }

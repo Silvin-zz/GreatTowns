@@ -4,6 +4,7 @@ import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -42,9 +43,14 @@ public class DetailFragment extends Fragment {
 
         txtParties.setText(r.getDescription());
         txtFood.setText(r.getFood());
-        InputStream is = getClass().getClassLoader().getResourceAsStream("images/tlalcotalpan.jpg");
-        Bitmap bitmap = BitmapFactory.decodeStream(is);
-        imgView.setImageBitmap(bitmap);
+
+
+        //Obtenemos el id de la imagen
+        int id = getResources().getIdentifier("diplomado.ccm.itesm.greattowns:drawable/" + r.getUrlImage(), null, null);
+        //Seteamos el imageview con el id de la imagen encontrada
+        imgView.setImageResource(id);
+
+
     }
 
 

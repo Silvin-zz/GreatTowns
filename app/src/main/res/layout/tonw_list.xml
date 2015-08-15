@@ -8,8 +8,8 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/imageView"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -28,9 +28,12 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_marginLeft="5dp"
-            android:textSize="10dp"
+            android:textSize="15dp"
             android:maxWidth="60dp"
-            android:minHeight="60dp" />
+            android:minHeight="20dp"
+            android:maxHeight="60dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,7 +48,8 @@
             android:layout_alignParentEnd="true"
             android:minHeight="35dp"
             android:maxHeight="35dp"
-            android:layout_marginTop="5dp"
-            android:textSize="10dp" />
+            android:layout_marginTop="2dp"
+            android:textSize="14dp"
+            android:textStyle="italic" />
     </RelativeLayout>
 </LinearLayout>

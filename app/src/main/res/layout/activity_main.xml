@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:name="diplomado.ccm.itesm.greattowns.DetailFragment"
             android:id="@+id/fragment2"
-            android:layout_weight="0.31"
+            android:layout_weight="0.38"
             android:layout_marginTop="10dp" />
     </LinearLayout>
 </RelativeLayout>
